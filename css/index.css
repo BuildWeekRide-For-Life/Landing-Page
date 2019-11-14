@@ -170,32 +170,35 @@ img {
 }
 .header-wrapper {
   background-color: #deded8;
+  position: fixed;
+  width: 100%;
 }
 .header-wrapper header {
-  max-width: 800px;
-  margin: 0 auto;
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 .header-wrapper header .nav-wrapper {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 85%;
+  width: 95%;
   color: #263A59;
   text-decoration: none;
   height: 80px;
-  position: fixed;
-  top: 0;
 }
 .header-wrapper header .nav-wrapper nav {
   display: flex;
   justify-content: space-around;
   width: 50%;
   color: #263A59;
+}
+.header-wrapper header .nav-wrapper nav a {
+  font-weight: 600;
+  font-size: 1.8rem;
 }
 .header-wrapper header .nav-wrapper nav a:visited {
   color: #263A59;
