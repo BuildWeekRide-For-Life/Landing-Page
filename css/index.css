@@ -280,3 +280,27 @@ img {
 #what-images img {
   width: 25%;
 }
+.signup-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5% 0;
+}
+.signup-wrapper .driver {
+  width: 50%;
+  background-color: #E42127;
+  color: white;
+  font-weight: 700;
+}
+.signup-wrapper .driver h2 {
+  text-align: center;
+}
+.signup-wrapper .rider {
+  width: 50%;
+  background-color: #E46428;
+  color: white;
+  font-weight: 700;
+}
+.signup-wrapper .rider h2 {
+  text-align: center;
+}
