@@ -230,13 +230,13 @@ img {
   margin: 0 3%;
 }
 .what-is-content h1 {
-  margin: 5% 0;
+  margin: 5% 3% 2% 3%;
   color: #263A59;
 }
 .what-is-flex-parent {
   display: flex;
   justify-content: space-around;
-  margin: 5% 3%;
+  margin: 5% 3% 2% 3%;
 }
 .what-is-flex-parent .responsive {
   width: 30%;
@@ -272,21 +272,35 @@ img {
 .what-is-flex-parent .easy p {
   text-align: center;
 }
-.contact-parent {
-  background-color: #263A59;
+#what-images {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
-.contact-parent .contact-img {
-  width: 30%;
+#what-images img {
+  width: 25%;
 }
-.contact-parent .contact-text {
-  width: 30%;
-}
-.contact-parent .contact-text p {
-  text-align: center;
+.signup-wrapper {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  align-content: center;
-  margin: 3% 0;
+  margin: 5% 0;
+}
+.signup-wrapper .driver {
+  width: 50%;
+  background-color: #E42127;
   color: white;
+  font-weight: 700;
+}
+.signup-wrapper .driver h2 {
+  text-align: center;
+}
+.signup-wrapper .rider {
+  width: 50%;
+  background-color: #E46428;
+  color: white;
+  font-weight: 700;
+}
+.signup-wrapper .rider h2 {
+  text-align: center;
 }
