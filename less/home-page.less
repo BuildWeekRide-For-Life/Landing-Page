@@ -1,0 +1,174 @@
+.hero {
+  background-image: linear-gradient(to top, rgba(114, 115, 116, 0.475), rgb(255, 255, 255)), url("/images/dirtroad2.jpg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-attachment: fixed;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
+
+.what-is-content {
+  text-align: center;
+  margin: 0 3%;
+
+  h1 {
+    margin: 5% 3% 2% 3%;
+    color: @font-color;
+  }
+}
+
+.what-is-flex-parent{
+  display: flex;
+  justify-content: space-around;
+  margin: 5% 3% 2% 3%;
+  
+  .responsive {
+    width: 30%; 
+
+    h2 {
+      text-align: center;
+      margin-bottom: 3%;
+      color: @header;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .safe {
+    width: 30%;
+    height: 100%;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 3%;
+      color: @header;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .easy {
+    width: 30%;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 3%;
+      color: @header;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}
+
+#what-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+
+  img {
+    width: 25%;
+  }
+}
+
+.signup-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5% 0 0 0;
+
+  .driver {
+    width: 50%;
+    background-color: @red;
+    color: white;
+    font-weight: 700;
+    height: 275px;
+    text-align: center;
+    padding: 5%;
+    border-right: 2px solid @white;
+
+    p {
+      font-weight: 400;
+      font-size: 1.8rem;
+    }
+
+
+    button {
+      .button-white;
+     
+    }
+    button:hover {
+    
+      background-color: @dkblue;
+      color: @white;
+    
+  }
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .rider {
+    padding: 5%;
+    width: 50%;
+    background-color: @orange;
+    color: white;
+    font-weight: 700;
+    height: 275px;
+    text-align: center;
+
+    p {
+      font-weight: 400;
+      font-size: 1.8rem;
+    }
+
+    button {
+      .button-white;
+
+    }
+    button:hover {
+    
+      background-color: @dkblue;
+      color: @white;
+    
+  }
+
+    h2 {
+      text-align: center;
+    }
+
+    
+  }
+}
+
+footer {
+  background-color: @dkblue;
+  border-top: 2px solid white;
+  
+  p {
+    color: @white;
+  }
+}
+
+
+//** Rider Page ** //
+
+.rider-hero {
+  background-image: url("/images/african-woman.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
