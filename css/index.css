@@ -233,45 +233,42 @@ img {
   margin: 5% 0;
   color: #263A59;
 }
-.what-is-img {
+.what-is-flex-parent {
   display: flex;
   justify-content: space-around;
   margin: 5% 3%;
 }
-.what-is-img .responsive {
+.what-is-flex-parent .responsive {
   width: 30%;
 }
-.what-is-img .responsive h2 {
+.what-is-flex-parent .responsive h2 {
   text-align: center;
   margin-bottom: 3%;
   color: #E46428;
 }
-.what-is-img .responsive p {
+.what-is-flex-parent .responsive p {
   text-align: center;
 }
-.what-is-img .responsive img {
-  height: 428px;
-  width: 350px;
-}
-.what-is-img .safe {
+.what-is-flex-parent .safe {
   width: 30%;
+  height: 100%;
 }
-.what-is-img .safe h2 {
+.what-is-flex-parent .safe h2 {
   text-align: center;
   margin-bottom: 3%;
   color: #E46428;
 }
-.what-is-img .safe p {
+.what-is-flex-parent .safe p {
   text-align: center;
 }
-.what-is-img .easy {
+.what-is-flex-parent .easy {
   width: 30%;
 }
-.what-is-img .easy h2 {
+.what-is-flex-parent .easy h2 {
   text-align: center;
   margin-bottom: 3%;
   color: #E46428;
 }
-.what-is-img .easy p {
+.what-is-flex-parent .easy p {
   text-align: center;
 }
