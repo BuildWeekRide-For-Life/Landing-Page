@@ -284,23 +284,95 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 5% 0;
+  margin: 5% 0 0 0;
 }
 .signup-wrapper .driver {
   width: 50%;
   background-color: #E42127;
   color: white;
   font-weight: 700;
+  height: 275px;
+  text-align: center;
+  padding: 5%;
+  border-right: 2px solid white;
+}
+.signup-wrapper .driver p {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+.signup-wrapper .driver button {
+  height: 35%;
+  width: 50%;
+  font-size: 2rem;
+  background-color: white;
+  border: none;
+  color: #263A59;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.signup-wrapper .driver button:hover {
+  background-color: #263A59;
+  color: white;
 }
 .signup-wrapper .driver h2 {
   text-align: center;
 }
 .signup-wrapper .rider {
+  padding: 5%;
   width: 50%;
   background-color: #E46428;
   color: white;
   font-weight: 700;
+  height: 275px;
+  text-align: center;
+}
+.signup-wrapper .rider p {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+.signup-wrapper .rider button {
+  height: 35%;
+  width: 50%;
+  font-size: 2rem;
+  background-color: white;
+  border: none;
+  color: #263A59;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.signup-wrapper .rider button:hover {
+  background-color: #263A59;
+  color: white;
 }
 .signup-wrapper .rider h2 {
   text-align: center;
+}
+footer {
+  background-color: #263A59;
+  border-top: 2px solid white;
+}
+footer p {
+  color: white;
+}
+.rider-hero {
+  background-image: url("/images/african-woman.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
 }
