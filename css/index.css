@@ -272,3 +272,21 @@ img {
 .what-is-flex-parent .easy p {
   text-align: center;
 }
+.contact-parent {
+  background-color: #263A59;
+  display: flex;
+  justify-content: space-around;
+}
+.contact-parent .contact-img {
+  width: 30%;
+}
+.contact-parent .contact-text {
+  width: 30%;
+}
+.contact-parent .contact-text p {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin: 3% 0;
+  color: white;
+}
