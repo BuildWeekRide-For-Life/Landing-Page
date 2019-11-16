@@ -279,6 +279,7 @@ img {
 }
 #what-images img {
   width: 25%;
+  border-radius: 10px;
 }
 .signup-wrapper {
   display: flex;
