@@ -92,8 +92,12 @@
     font-weight: 700;
     height: 275px;
     text-align: center;
-    padding: 5%;
+    padding: 2% 0;
     border-right: 2px solid @white;
+
+    h2 {
+      margin-bottom: 2%;
+    }
 
     p {
       font-weight: 400;
@@ -103,6 +107,13 @@
 
     button {
       .button-white;
+      padding: 3%;
+      border-radius: 5px;
+      width: 40%;
+      vertical-align: middle;
+      text-align: center;
+      line-height: 5px;
+    
      
     }
     button:hover {
@@ -118,13 +129,17 @@
   }
 
   .rider {
-    padding: 5%;
+    padding: 2% 0;
     width: 50%;
     background-color: @orange;
     color: white;
     font-weight: 700;
     height: 275px;
     text-align: center;
+
+    h2 {
+      margin-bottom: 2%;
+    }
 
     p {
       font-weight: 400;
@@ -133,6 +148,12 @@
 
     button {
       .button-white;
+      padding: 3%;
+      border-radius: 5px;
+      width: 40%;
+      vertical-align: middle;
+      text-align: center;
+      line-height: 5px;
 
     }
     button:hover {
@@ -153,9 +174,37 @@
 footer {
   background-color: @dkblue;
   border-top: 2px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   
-  p {
+  .contact-text {
     color: @white;
+    width: 30%;
+    padding: 3% 5%;
+  
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  .contact-img {
+    width: 30%;
+
+    img {
+      margin: -10% 20% 0 0;
+    }
+  }
+
+  .contact-icons {
+    width: 30%;
+
+    i {
+      font-size: 3rem;
+      color: white;
+      margin: 15% 5%;
+      padding: 2%;
+    }
   }
 }
 
