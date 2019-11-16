@@ -168,6 +168,9 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+a:visited {
+  color: #263A59;
+}
 .header-wrapper {
   background-color: #deded8;
   position: fixed;
@@ -366,13 +369,44 @@ footer {
 footer p {
   color: white;
 }
-.rider-hero {
+.rider-hero-wrapper {
   background-image: url("/images/african-woman.jpg");
   background-repeat: no-repeat;
   background-position: left top;
-  background-attachment: fixed;
   padding: 5%;
   display: flex;
   flex-direction: column;
+  height: 800px;
+}
+.hero-text {
+  direction: flex;
+  width: 45%;
+  background-color: white;
   height: 600px;
+  margin-top: 20px;
+  padding: 3%;
+}
+.hero-text h1 {
+  color: #E46428;
+  font-weight: 700;
+}
+button {
+  height: 80px;
+  width: 50%;
+  font-size: 2rem;
+  background-color: #E46428;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #263A59;
+  color: white;
 }
