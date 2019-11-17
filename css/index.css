@@ -201,6 +201,12 @@ a:visited {
   width: 50%;
   color: #263A59;
 }
+@media (max-width: 500px) {
+  .header-wrapper header .nav-wrapper nav {
+    justify-content: space-around;
+    width: 100%;
+  }
+}
 .header-wrapper header .nav-wrapper nav a {
   font-weight: 600;
   font-size: 1.8rem;
@@ -211,14 +217,15 @@ a:visited {
 .header-wrapper header .nav-wrapper nav a:hover {
   color: #E42127;
 }
-.header-wrapper header .nav-wrapper a {
-  text-decoration: none;
-  font-size: 1.5rem;
-}
 @media (max-width: 500px) {
-  .header-wrapper header {
+  .header-wrapper header .nav-wrapper {
     flex-direction: column;
   }
+}
+.header-wrapper header .nav-wrapper a {
+  text-decoration: none;
+  justify-content: space-around;
+  font-size: 1.5rem;
 }
 footer {
   background-color: #263A59;
@@ -228,6 +235,12 @@ footer {
   justify-content: space-around;
   height: 300px;
 }
+@media (max-width: 500px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 footer .contact-text {
   color: white;
   width: 30%;
@@ -235,6 +248,11 @@ footer .contact-text {
 }
 footer .contact-text p {
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  footer .contact-text p {
+    font-size: 1.5rem;
+  }
 }
 footer .contact-img {
   width: 30%;
@@ -250,6 +268,12 @@ footer .contact-icons i {
   color: white;
   margin: 15% 5%;
   padding: 2%;
+}
+footer .copyright {
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
 }
 .hero {
   background-image: linear-gradient(to top, rgba(114, 115, 116, 0.475), #ffffff), url("/images/dirtroad2.jpg");
@@ -274,8 +298,20 @@ footer .contact-icons i {
   justify-content: space-around;
   margin: 5% 3% 2% 3%;
 }
+@media (max-width: 500px) {
+  .what-is-flex-parent {
+    flex-direction: column;
+    width: 90%;
+  }
+}
 .what-is-flex-parent .responsive {
   width: 30%;
+}
+@media (max-width: 500px) {
+  .what-is-flex-parent .responsive {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .what-is-flex-parent .responsive h2 {
   text-align: center;
@@ -289,6 +325,12 @@ footer .contact-icons i {
   width: 30%;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .what-is-flex-parent .safe {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .what-is-flex-parent .safe h2 {
   text-align: center;
   margin-bottom: 3%;
@@ -299,6 +341,12 @@ footer .contact-icons i {
 }
 .what-is-flex-parent .easy {
   width: 30%;
+}
+@media (max-width: 500px) {
+  .what-is-flex-parent .easy {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .what-is-flex-parent .easy h2 {
   text-align: center;
@@ -323,6 +371,12 @@ footer .contact-icons i {
   align-items: center;
   margin: 5% 0 0 0;
 }
+@media (max-width: 500px) {
+  .signup-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .signup-wrapper .driver {
   width: 50%;
   background-color: #E42127;
@@ -332,6 +386,14 @@ footer .contact-icons i {
   text-align: center;
   padding: 2% 0;
   border-right: 2px solid white;
+}
+@media (max-width: 500px) {
+  .signup-wrapper .driver {
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 2px solid white;
+    border-right: none;
+  }
 }
 .signup-wrapper .driver h2 {
   margin-bottom: 2%;
@@ -376,6 +438,12 @@ footer .contact-icons i {
   font-weight: 700;
   height: 275px;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .signup-wrapper .rider {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .signup-wrapper .rider h2 {
   margin-bottom: 2%;
@@ -431,11 +499,14 @@ footer .contact-icons i {
 }
 .hero-text h1 {
   color: #E46428;
-  font-weight: 700;
+}
+.hero-text h2 {
+  font-weight: 400;
+  color: #575972;
 }
 button {
   height: 80px;
-  width: 50%;
+  width: 45%;
   font-size: 2rem;
   background-color: #E46428;
   border: none;
@@ -452,5 +523,26 @@ button {
 }
 button:hover {
   background-color: #263A59;
+  color: white;
+}
+.slate-button {
+  height: 80px;
+  width: 45%;
+  font-size: 2rem;
+  background-color: #575972;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.slate-button:hover {
+  background-color: #E46428;
   color: white;
 }

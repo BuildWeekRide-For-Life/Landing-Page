@@ -3,11 +3,14 @@
     position: fixed;
     width: 100%; 
 
+   
+
     header {
         // .margin(100%, 90%;
         height: 80px;
         .displayflex(space-between, center);
         z-index: 10;
+       
         
 
             .nav-wrapper {
@@ -27,6 +30,12 @@
                     justify-content: space-around;
                     width: 50%;
                     color: @dkblue;
+
+                    @media @phone {
+                        justify-content: space-around;
+                        width: 100%;
+                      
+                    }
                     
                      a { font-weight: 600;
                      font-size: 1.8rem;
@@ -41,20 +50,18 @@
 
 
                 @media @phone {
+                    flex-direction: column
                    
                 }
             
                 a {
                     text-decoration: none;
-                    
+                    justify-content: space-around;
                     font-size: 1.5rem;
+
+                    
                 }
             }
-        @media @phone {
-             flex-direction: column;
-             
-             
-        }
+       
     }
 }
-
