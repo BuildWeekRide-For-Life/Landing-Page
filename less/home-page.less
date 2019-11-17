@@ -23,9 +23,19 @@
   display: flex;
   justify-content: space-around;
   margin: 5% 3% 2% 3%;
+
+  @media @phone {
+    flex-direction: column;
+    width: 90%;
+}
   
   .responsive {
     width: 30%; 
+
+    @media @phone {
+      flex-direction: column;
+      width: 100%;
+  }
 
     h2 {
       text-align: center;
@@ -42,6 +52,11 @@
     width: 30%;
     height: 100%;
 
+    @media @phone {
+      flex-direction: column;
+      width: 100%;
+  }
+
     h2 {
       text-align: center;
       margin-bottom: 3%;
@@ -55,6 +70,11 @@
 
   .easy {
     width: 30%;
+
+    @media @phone {
+      flex-direction: column;
+      width: 100%;
+  }
 
     h2 {
       text-align: center;
@@ -85,6 +105,11 @@
   align-items: center;
   margin: 5% 0 0 0;
 
+  @media @phone {
+    flex-direction: column;
+    width: 100%;
+}
+
   .driver {
     width: 50%;
     background-color: @red;
@@ -94,6 +119,13 @@
     text-align: center;
     padding: 2% 0;
     border-right: 2px solid @white;
+
+    @media @phone {
+      flex-direction: column;
+      width: 100%;
+      border-bottom: 2px solid @white;
+      border-right: none;
+  }
 
     h2 {
       margin-bottom: 2%;
@@ -135,6 +167,11 @@
     font-weight: 700;
     height: 275px;
     text-align: center;
+
+    @media @phone {
+      flex-direction: column;
+      width: 100%;
+  }
 
     h2 {
       margin-bottom: 2%;
