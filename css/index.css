@@ -546,3 +546,65 @@ button:hover {
   background-color: #E46428;
   color: white;
 }
+.four-col {
+  display: flex;
+  width: 100%;
+}
+.four-col .team-member {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.four-col .feature-title-inner {
+  display: flex;
+  flex-direction: column;
+}
+.feature-title2 {
+  background-color: #E46428;
+  height: 120px;
+}
+.feature-title2 .feature-title-inner {
+  padding: 5%;
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+.feature-title2 .feature-title-inner .job-title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.feature-title {
+  background-color: #E42127;
+  height: 120px;
+}
+.feature-title .feature-title-inner {
+  padding: 5%;
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+.feature-title .feature-title-inner .job-title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.dev-icons {
+  margin-top: 1%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.dev-icons a {
+  color: white;
+}
+.dev-icons a:hover {
+  color: #263A59;
+}
+.about-wrapper h1 {
+  color: #E46428;
+  padding: 3% 20% 1% 20%;
+}
+.about-wrapper p {
+  padding: 0 20% 3% 20%;
+}
