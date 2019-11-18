@@ -504,7 +504,7 @@ footer .copyright {
   font-weight: 400;
   color: #575972;
 }
-button {
+.orange-button-rider {
   height: 80px;
   width: 45%;
   font-size: 2rem;
@@ -521,11 +521,11 @@ button {
   margin: 4px 2px;
   cursor: pointer;
 }
-button:hover {
+.orange-button-rider:hover {
   background-color: #263A59;
   color: white;
 }
-.slate-button {
+.slate-button-rider {
   height: 80px;
   width: 45%;
   font-size: 2rem;
@@ -542,7 +542,7 @@ button:hover {
   margin: 4px 2px;
   cursor: pointer;
 }
-.slate-button:hover {
+.slate-button-rider:hover {
   background-color: #E46428;
   color: white;
 }
@@ -607,4 +607,70 @@ button:hover {
 }
 .about-wrapper p {
   padding: 0 20% 3% 20%;
+}
+.driver-hero-wrapper {
+  background-image: url("/images/african-driver.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+}
+.hero-text-driver {
+  direction: flex;
+  width: 45%;
+  background-color: white;
+  height: 600px;
+  margin-top: 20px;
+  padding: 3%;
+}
+.hero-text-driver h1 {
+  color: #E42127;
+}
+.hero-text-driver h2 {
+  font-weight: 400;
+  color: #575972;
+}
+button {
+  height: 80px;
+  width: 45%;
+  font-size: 2rem;
+  background-color: #E42127;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #263A59;
+  color: white;
+}
+.slate-button {
+  height: 80px;
+  width: 45%;
+  font-size: 2rem;
+  background-color: #575972;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.slate-button:hover {
+  background-color: #E42127;
+  color: white;
 }
