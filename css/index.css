@@ -558,6 +558,12 @@ footer .copyright {
   float: left;
   width: 25%;
 }
+@media (max-width: 500px) {
+  .four-col .team-member {
+    display: flex;
+    flex-direction: flex-wrap;
+  }
+}
 .four-col .feature {
   display: block;
   width: 100%;
