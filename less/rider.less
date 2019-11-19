@@ -1,6 +1,6 @@
 // ** Rider Page ** //
 .rider-hero-wrapper {
-    background-image:url("/images/african-woman.jpg");
+    background-image:~"url('../images/african-woman.jpg')";
     // background-repeat: no-repeat;
     // background-position: right bottom;
     -webkit-background-size: cover;
@@ -60,3 +60,85 @@
 // .hero-image img {
 //     margin-top: 75px;
 // }
+
+.rider-heading-1 {
+  h1 {
+    color: @orange;
+    margin: 2% 5%;
+  }
+}
+
+.rider-top-parent {
+  display: flex;
+  justify-content: space-around;
+  height: 350px;
+    
+  .rider-top-text {
+    color: white;
+    border-radius: 15px;
+    max-width: 350px;
+    max-height: 350px;
+    background-color: @slate;
+
+    
+    p {
+      font-size: 2.1rem;
+      padding: 7%;
+    }
+  }
+
+    .rider-top-img {
+      
+      img {
+        border-radius: 15px;
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        //min-height: 60%; 
+        //min-width: 60%;
+        width: auto;
+        height: auto;
+      }
+   }
+}
+
+.rider-bottom-section {
+  background-color: @orange;
+
+  .rider-heading-2 {
+    
+    h1 {
+      color: white;
+      margin: 2% 5%; 
+      padding-top: 3%;
+    } 
+  }
+}
+
+.rider-bottom-parent {
+  display: flex; 
+  justify-content: space-around;
+  width: 100%;
+
+  .rider-bottom-text {
+    width: 40%;
+    
+    p {
+      color: white;
+      margin: 0 7%;
+    }
+  }
+
+  .rider-bottom-image {
+    
+    img {
+      border-radius: 15px;
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      border-radius: 15px;
+    }
+  }
+}
