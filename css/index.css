@@ -178,12 +178,25 @@ a:visited {
   position: fixed;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .header-wrapper {
+    display: flex;
+  }
+  .header-wrapper img {
+    width: 50%;
+  }
+}
 .header-wrapper header {
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+}
+@media (max-width: 500px) {
+  .header-wrapper header {
+    height: 100 px;
+  }
 }
 .header-wrapper header .nav-wrapper {
   overflow: hidden;
@@ -195,37 +208,61 @@ a:visited {
   text-decoration: none;
   height: 80px;
 }
-.header-wrapper header .nav-wrapper nav {
+@media (max-width: 500px) {
+  .header-wrapper header .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+  }
+}
+.header-wrapper header .nav-wrapper .main-nav {
+  width: 50%;
+}
+.header-wrapper header .nav-wrapper ul#myLinks {
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 100%;
   color: #263A59;
 }
 @media (max-width: 500px) {
-  .header-wrapper header .nav-wrapper nav {
-    justify-content: space-around;
+  .header-wrapper header .nav-wrapper ul#myLinks {
+    flex-direction: column;
     width: 100%;
   }
 }
-.header-wrapper header .nav-wrapper nav a {
+.header-wrapper header .nav-wrapper ul#myLinks a {
   font-weight: 600;
   font-size: 1.8rem;
 }
-.header-wrapper header .nav-wrapper nav a:visited {
+.header-wrapper header .nav-wrapper ul#myLinks a:visited {
   color: #263A59;
 }
-.header-wrapper header .nav-wrapper nav a:hover {
+.header-wrapper header .nav-wrapper ul#myLinks a:hover {
   color: #E42127;
 }
 @media (max-width: 500px) {
-  .header-wrapper header .nav-wrapper {
-    flex-direction: column;
-  }
 }
 .header-wrapper header .nav-wrapper a {
   text-decoration: none;
   justify-content: space-around;
   font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+  .main-nav.toggleCls {
+    display: block;
+  }
+}
+@media (min-width: 769px) {
+  .hamIcon {
+    display: none;
+  }
+  .main-nav {
+    display: initial;
+  }
 }
 footer {
   background-color: #263A59;
@@ -233,7 +270,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 300px;
+  height: 400px;
 }
 @media (max-width: 500px) {
   footer {
@@ -244,7 +281,7 @@ footer {
 footer .contact-text {
   color: white;
   width: 30%;
-  padding: 3% 5%;
+  padding: 6.5% 5%;
 }
 footer .contact-text p {
   font-size: 2rem;
@@ -262,6 +299,7 @@ footer .contact-img img {
 }
 footer .contact-icons {
   width: 30%;
+  margin-top: 3%;
 }
 footer .contact-icons i {
   font-size: 3rem;
@@ -274,6 +312,24 @@ footer .copyright {
   color: white;
   display: flex;
   align-items: center;
+}
+.footer-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 2%;
+}
+.footer-link a {
+  text-decoration: none;
+  color: #263A59;
+  font-size: 2rem;
+  padding: 0 10%;
+}
+.footer-link a:visited {
+  color: #263A59;
+}
+.footer-link a:hover {
+  color: #E42127;
 }
 .hero {
   background-image: linear-gradient(to top, rgba(114, 115, 116, 0.475), #ffffff), url("/images/dirtroad2.jpg");
@@ -553,6 +609,12 @@ footer .copyright {
   display: flex;
   overflow: hidden;
 }
+@media (max-width: 500px) {
+  .four-col {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .four-col .team-member {
   margin-top: 80px;
   float: left;
@@ -560,15 +622,21 @@ footer .copyright {
 }
 @media (max-width: 500px) {
   .four-col .team-member {
-    display: flex;
-    flex-direction: flex-wrap;
+    width: 50%;
+    margin-top: 0px;
+  }
+  .four-col .team-member #st {
+    margin-top: 80px;
+  }
+  .four-col .team-member #ak {
+    margin-top: 80px;
   }
 }
-.four-col .feature {
+.feature {
   display: block;
   width: 100%;
 }
-.four-col .feature-title-inner {
+.feature-title-inner {
   display: flex;
   flex-direction: column;
 }
@@ -619,10 +687,11 @@ footer .copyright {
 .about-wrapper h1 {
   text-align: center;
   color: #E46428;
-  padding: 3% 20% 1% 20%;
+  padding: 3% 10% 1% 10%;
 }
 .about-wrapper p {
   padding: 0 20% 3% 20%;
+  text-align: center;
 }
 .driver-hero-wrapper {
   background-image: url("/images/african-driver.jpg");

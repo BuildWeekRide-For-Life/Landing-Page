@@ -18,16 +18,20 @@
       <div class="nav-wrapper">
           
          <a href="index.html"> <img src="images/RFLlogo-horz.png" ></a>
-        <nav >
-          <div id="myLinks"></div>
-            <a href="driver.html">Drivers</a>
-            <a href="rider.html">Riders</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </div>
+       
+       <div class="hamIcon" onclick="toggleClass()">
+         <h2>&#9776;</h2>
+       </div>
+         <nav class="main-nav">
+          <ul id="myLinks">
+            <li><a href="driver.html">Drivers</a></li>
+            <li><a href="rider.html">Riders</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
       
         </nav>
-        
+
       </div>
       
     </div>
@@ -75,7 +79,7 @@
       <p>Safe, reliable, licensed, trained. 
         <br>Find out what it takes to be a driver!
       </p>
-      <button>Find out more</button>
+      <a href="driver.html"><button>Find out more</button></a>
 
     </div>
     <div class="rider">
@@ -88,23 +92,33 @@
   </container>
 
   <footer>
-      <div class="contact-text">
-        <p>PO Box 7040<br>
-          Kampala Uganda<br>
-          0800 200 300<br>
-          team@rideforlife.com
-        </p>
-      </div>
-      
-      <div class="contact-img">
-        <img src="images/RFLlogo-REV.svg">
-      </div>
-      <div class="contact-icons">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-youtube"></i>
-      </div>
-    </footer>
+    <div class="contact-text">
+      <p>PO Box 7040<br>
+        Kampala Uganda<br>
+        0800 200 300<br>
+        team@rideforlife.com
+      </p>
+    </div>
+    
+    <div class="contact-img">
+      <img src="images/RFLlogo-REV.svg">
+    </div>
+    <div class="contact-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
 
+  </footer>
+  
+  <container>
+    <div class="footer-link">
+      <a href="driver.html">Drivers</a>
+      <a href="rider.html">Riders</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </container>
+  <script src="script.js"></script>
 </body>
