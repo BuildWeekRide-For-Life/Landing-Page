@@ -482,12 +482,15 @@ footer .copyright {
 }
 .rider-hero-wrapper {
   background-image: url("/images/african-woman.jpg");
-  background-repeat: no-repeat;
-  background-position: left top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding: 5%;
   display: flex;
   flex-direction: column;
   height: 800px;
+  width: 100%;
 }
 .hero-text {
   direction: flex;
@@ -548,12 +551,16 @@ footer .copyright {
 }
 .four-col {
   display: flex;
-  width: 100%;
+  overflow: hidden;
 }
 .four-col .team-member {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
+  margin-top: 80px;
+  float: left;
+  width: 25%;
+}
+.four-col .feature {
+  display: block;
+  width: 100%;
 }
 .four-col .feature-title-inner {
   display: flex;
@@ -566,12 +573,13 @@ footer .copyright {
 .feature-title2 .feature-title-inner {
   padding: 5%;
   color: white;
-  font-size: 3rem;
+  background-color: #E42127;
+  font-size: 2rem;
   font-weight: 700;
   text-align: center;
 }
 .feature-title2 .feature-title-inner .job-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 .feature-title {
@@ -581,12 +589,13 @@ footer .copyright {
 .feature-title .feature-title-inner {
   padding: 5%;
   color: white;
-  font-size: 3rem;
+  background-color: #E46428;
+  font-size: 2rem;
   font-weight: 700;
   text-align: center;
 }
 .feature-title .feature-title-inner .job-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 .dev-icons {
@@ -602,6 +611,7 @@ footer .copyright {
   color: #263A59;
 }
 .about-wrapper h1 {
+  text-align: center;
   color: #E46428;
   padding: 3% 20% 1% 20%;
 }
@@ -610,8 +620,10 @@ footer .copyright {
 }
 .driver-hero-wrapper {
   background-image: url("/images/african-driver.jpg");
-  background-repeat: no-repeat;
-  background-position: left top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding: 5%;
   display: flex;
   flex-direction: column;
