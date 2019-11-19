@@ -13,19 +13,26 @@
   </head>
   <body>
 
-    <div class="header-wrapper">
-    <header>
-      <div class="nav-wrapper">
-          <a href="index.html"> <img src="images/RFLlogo-horz.png" ></a>
-          <nav>
-            <a href="driver.html">Drivers</a>
-            <a href="rider.html">Riders</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-      </div>
-    </div>
-    </header>
+      <div class="header-wrapper">
+          <header>
+            <div class="nav-wrapper">
+                
+               <a href="index.html"> <img src="images/RFLlogo-horz.png" ></a>
+             
+             <div class="hamIcon" onclick="toggleClass()">
+               <h2>&#9776;</h2>
+             </div>
+               <nav class="main-nav">
+                <ul id="myLinks">
+                  <li><a href="driver.html">Drivers</a></li>
+                  <li><a href="rider.html">Riders</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          </header>
   
 
   <container class="driver-hero-wrapper">
@@ -70,4 +77,6 @@
       <i class="fab fa-youtube"></i>
     </div>
   </footer>
+  <script src="script.js"></script>
+
   </body>
