@@ -10,19 +10,28 @@
   <link rel="stylesheet" href="css/index.css">
 </head>
 
+ 
 <body>
-  <div class="header-wrapper">
-    <header>
-      <div class="nav-wrapper">
-        <a href="index.html"> <img src="images/RFLlogo-horz.png" ></a>
-          <nav>
-            <a href="driver.html">Drivers</a>
-            <a href="rider.html">Riders</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-          </nav>
-      </div>
-    </header>
+<div class="header-wrapper">
+          <header>
+            <div class="nav-wrapper">
+                
+               <a href="index.html"> <img src="images/RFLlogo-horz.png" ></a>
+             
+             <div class="hamIcon" onclick="toggleClass()">
+               <h2>&#9776;</h2>
+             </div>
+               <nav class="main-nav">
+                <ul id="myLinks">
+                  <li><a href="driver.html">Drivers</a></li>
+                  <li><a href="rider.html">Riders</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          </header>
   </div>
 
   <container class="rider-hero-wrapper">
@@ -100,6 +109,7 @@
     </div>
   </footer>
 
+
   <container>
       <div class="footer-link">
         <a href="driver.html">Drivers</a>
@@ -109,4 +119,6 @@
       </div>
   </container>
   </html>
+  <script src="script.js"></script>
+
 </body>

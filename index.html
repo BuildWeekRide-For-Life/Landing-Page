@@ -18,16 +18,20 @@
       <div class="nav-wrapper">
           
          <a href="index.html"> <img src="images/RFLlogo-horz.png" ></a>
-        <nav >
-          <div id="myLinks"></div>
-            <a href="driver.html">Drivers</a>
-            <a href="rider.html">Riders</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </div>
+       
+       <div class="hamIcon" onclick="toggleClass()">
+         <h2>&#9776;</h2>
+       </div>
+         <nav class="main-nav">
+          <ul id="myLinks">
+            <li><a href="driver.html">Drivers</a></li>
+            <li><a href="rider.html">Riders</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
       
         </nav>
-        
+
       </div>
       
     </div>
@@ -122,5 +126,5 @@
   <container>
     <p id="copyright">Copyright&copy of Ride for Life 2019</p>
   </container>
-
+  <script src="script.js"></script>
 </body>
