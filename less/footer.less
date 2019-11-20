@@ -1,37 +1,69 @@
-footer {
+.footer-content-wrapper {
   background-color: @dkblue;
   border-top: 2px solid white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 400px;
+  height: 250px;
+  
 
     @media @phone {
       display: flex;
       flex-direction: column;
     }
     
-  .contact-text {
+    #footer-left{
+  
     color: @white;
     width: 30%;
-    padding: 6.5% 5%;
+    padding: 3% 5%;
   
     p {
-      font-size: 2rem;
+      font-size: 1.6rem;
       @media @phone{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
-    }
+    
   }
+}
+
+#footer-middle{
+  width: 20%;
+  padding: 1%;
+
+}
+ 
+    
+
+#footer-right{
+  padding: 5%;
+  display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+width: 50%;
+text-align: center;
   
-  .contact-img {
-    width: 30%;
+  a{
+    display: flex;
+  color: white;
+  text-decoration: none;
+  padding: 5%;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+a:hover{
+  color: @orange;
+}
 
-    img {
-      margin: 10% 20% 0 0;
-    }
-  }
 
+
+.footer-link-mid{
+  width: 30%;
+}
+
+}
+
+#social-copyright{
   .contact-icons {
     width: 30%;
     margin-top: 3%;
@@ -43,32 +75,60 @@ footer {
       padding: 2%;
     }
   }
-      
-  .copyright {
-    width: 100%;
-    color: white;
-    display: flex;
-    align-items: center;
-  }
+}
+.footer-link-right{
+  width: 35%;
+}
+// #footer-middle{
+ 
+// }
+
+div.contact-img{
+  width: 60%;
+    margin-bottom: 20px;
+}
 }
 
-.footer-link {
-  display: block;
+.bottom{
+  background-color: @dkblue;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
   width: 100%;
   text-align: center;
-  margin: 2%;
-  
-  a {
-    text-decoration: none;
-    color: @dkblue;
-    font-size: 2rem;
-    padding: 0 10%;
-  }
+
+
+
+  #social-copyright{
+    width: 100%;
+    display: flex;
+    align-items: center;
     
-    a:visited {
-      color: @dkblue;
+
+  .contact-icons{
+    color: white;
+    font-size: 2rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+
+    i{
+      padding: 5%;
+      text-align: center;
+      font-size: 3rem;
     }
-    a:hover {
-      color: @red;
+  }
+  .copyright{
+    display: flex;
+    color: white;
+
+
+    h6{
+
+      font-size: 1.5rem;
     }
+  }
+  
+}
 }

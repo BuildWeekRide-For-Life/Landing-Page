@@ -288,72 +288,108 @@ a:visited {
     display: initial;
   }
 }
-footer {
+.footer-content-wrapper {
   background-color: #263A59;
   border-top: 2px solid white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 400px;
+  height: 250px;
 }
 @media (max-width: 500px) {
-  footer {
+  .footer-content-wrapper {
     display: flex;
     flex-direction: column;
   }
 }
-footer .contact-text {
+.footer-content-wrapper #footer-left {
   color: white;
   width: 30%;
-  padding: 6.5% 5%;
+  padding: 3% 5%;
 }
-footer .contact-text p {
-  font-size: 2rem;
+.footer-content-wrapper #footer-left p {
+  font-size: 1.6rem;
 }
 @media (max-width: 500px) {
-  footer .contact-text p {
-    font-size: 1.5rem;
+  .footer-content-wrapper #footer-left p {
+    font-size: 1.3rem;
   }
 }
-footer .contact-img {
+.footer-content-wrapper #footer-middle {
+  width: 20%;
+  padding: 1%;
+}
+.footer-content-wrapper #footer-right {
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+  text-align: center;
+}
+.footer-content-wrapper #footer-right a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  padding: 5%;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+.footer-content-wrapper #footer-right a:hover {
+  color: #E46428;
+}
+.footer-content-wrapper #footer-right .footer-link-mid {
   width: 30%;
 }
-footer .contact-img img {
-  margin: 10% 20% 0 0;
-}
-footer .contact-icons {
+.footer-content-wrapper #social-copyright .contact-icons {
   width: 30%;
   margin-top: 3%;
 }
-footer .contact-icons i {
+.footer-content-wrapper #social-copyright .contact-icons i {
   font-size: 3rem;
   color: white;
   margin: 15% 5%;
   padding: 2%;
 }
-footer .copyright {
+.footer-content-wrapper .footer-link-right {
+  width: 35%;
+}
+.footer-content-wrapper div.contact-img {
+  width: 60%;
+  margin-bottom: 20px;
+}
+.bottom {
+  background-color: #263A59;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
   width: 100%;
-  color: white;
+  text-align: center;
+}
+.bottom #social-copyright {
+  width: 100%;
   display: flex;
   align-items: center;
 }
-.footer-link {
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin: 2%;
-}
-.footer-link a {
-  text-decoration: none;
-  color: #263A59;
+.bottom #social-copyright .contact-icons {
+  color: white;
   font-size: 2rem;
-  padding: 0 10%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
 }
-.footer-link a:visited {
-  color: #263A59;
+.bottom #social-copyright .contact-icons i {
+  padding: 5%;
+  text-align: center;
+  font-size: 3rem;
 }
-.footer-link a:hover {
-  color: #E42127;
+.bottom #social-copyright .copyright {
+  display: flex;
+  color: white;
+}
+.bottom #social-copyright .copyright h6 {
+  font-size: 1.5rem;
 }
 .hero {
   background-image: linear-gradient(to top, rgba(114, 115, 116, 0.475), #ffffff), url("/images/dirtroad2.jpg");
