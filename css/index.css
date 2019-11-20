@@ -967,3 +967,85 @@ button:hover {
   height: auto;
   border-radius: 15px;
 }
+.about-hero-wrapper {
+  background-image: url("../images/city.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+}
+.about-hero-text {
+  direction: flex;
+  width: 50%;
+  background-color: white;
+  height: 700px;
+  margin-top: 30px;
+  padding: 3%;
+}
+.about-hero-text h1 {
+  color: #E42127;
+}
+.about-hero-text h2 {
+  font-weight: 400;
+  color: #575972;
+}
+.about-heading-1 h1 {
+  color: #263A59;
+  margin: 2% 5%;
+}
+.about-top-parent {
+  background-color: #E46428;
+  display: flex;
+  justify-content: space-around;
+  height: 350px;
+}
+.about-top-parent img {
+  border-radius: 15px;
+}
+.about-top-parent .about-top-text {
+  color: white;
+  border-radius: 15px;
+  max-width: 350px;
+  max-height: 350px;
+  background-color: #263A59;
+  font-size: 2rem;
+  padding: 5% 2% 0 2%;
+}
+.about-heading-2 h1 {
+  color: #263A59;
+  margin: 2% 5%;
+  padding-top: 3%;
+}
+.about-bottom-parent {
+  background-color: #E46428;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.about-bottom-parent .about-bottom-text {
+  color: #263A59;
+  border-radius: 15px;
+  max-width: 350px;
+  max-height: 350px;
+  background-color: #263A59;
+  font-size: 2rem;
+  padding: 5% 2% 0 2%;
+}
+.about-bottom-parent .about-bottom-text p {
+  color: white;
+  margin: 0 7%;
+  font-size: 1.6rem;
+}
+.about-bottom-parent .about-bottom-img img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+}
