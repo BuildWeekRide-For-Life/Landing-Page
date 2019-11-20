@@ -267,6 +267,15 @@ a:visited {
   .header-wrapper header .nav-wrapper ul#myLinks a:hover {
     color: #E46428;
   }
+  a:link {
+    color: white;
+  }
+  a:visted {
+    color: white;
+  }
+  a:active {
+    color: #E46428;
+  }
 }
 .header-wrapper header .nav-wrapper ul#myLinks {
   display: flex;
