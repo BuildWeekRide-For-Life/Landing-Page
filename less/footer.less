@@ -1,37 +1,71 @@
-footer {
+.footer-content-wrapper {
   background-color: @dkblue;
   border-top: 2px solid white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 400px;
+  height: 250px;
+  
 
     @media @phone {
       display: flex;
       flex-direction: column;
     }
     
-  .contact-text {
+    #footer-left{
+  
     color: @white;
     width: 30%;
-    padding: 5%;
+    padding: 3% 5%;
+
+  
   
     p {
-      font-size: 2rem;
+      font-size: 1.6rem;
       @media @phone{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
-    }
+    
   }
+}
+
+#footer-middle{
+  width: 20%;
+  padding: 1%;
+
+}
+ 
+    
+
+#footer-right{
+  padding: 5%;
+  display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+width: 50%;
+text-align: center;
   
-  .contact-img {
-    width: 30%;
+  a{
+    display: flex;
+  color: white;
+  text-decoration: none;
+  padding: 5%;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+a:hover{
+  color: @orange;
+}
 
-    img {
-      margin: 10% 20% 0 0;
-    }
-  }
 
+
+.footer-link-mid{
+  width: 30%;
+}
+
+}
+
+#social-copyright{
   .contact-icons {
     width: 30%;
     margin-top: 3%;
@@ -44,26 +78,59 @@ footer {
     }
   }
 }
+.footer-link-right{
+  width: 35%;
+}
+// #footer-middle{
+ 
+// }
 
-.footer-link {
-  display: block;
+div.contact-img{
+  width: 60%;
+    margin-bottom: 20px;
+}
+}
+
+.bottom{
+  background-color: @dkblue;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
   width: 100%;
   text-align: center;
-  margin: 2% 0;
-  
-  a {
-    text-decoration: none;
-    color: @dkblue;
+
+
+
+  #social-copyright{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+
+  .contact-icons{
+    color: white;
     font-size: 2rem;
-    padding: 0 8.5%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+
+    i{
+      padding: 5%;
+      text-align: center;
+      font-size: 3rem;
+    }
   }
-    
-    a:visited {
-      color: @dkblue;
+  .copyright{
+    display: flex;
+    color: white;
+
+
+    h6{
+
+      font-size: 1.5rem;
     }
-    a:hover {
-      color: @red;
-    }
+
 
   #copyright {
       color: @red;
@@ -77,3 +144,5 @@ footer {
       
     }
   }
+}
+}

@@ -5,6 +5,14 @@
     display: flex;
     overflow: hidden;
     // width: 100%;
+    @media @phone {
+           display: flex;
+           flex-wrap: wrap;
+                 
+           
+
+           }
+
 
     .team-member{
         margin-top: 80px;
@@ -12,7 +20,25 @@
         // flex-direction: column;
         float: left;
         width: 25%;
+
+        @media @phone {
+
+        width: 50%;
+        margin-top: 0px;
+
+
+        #st {
+            margin-top: 80px;
+          }
+          #ak {
+            margin-top: 80px;
+          }
+
+          }
+        }
     }
+
+ 
 
     .feature{
         display: block;
@@ -23,7 +49,7 @@
         display: flex;
         flex-direction: column;
     }
-}
+
 
 .feature-title2 {
     background-color: @orange;
@@ -85,9 +111,11 @@
     h1{
         text-align: center;
         color: @orange;
-        padding: 3% 20% 1% 20%;
+        padding: 3% 10% 1% 10%;
     }
     p{
         padding: 0 20% 3% 20%;
+        text-align: center;
+
     }
 }

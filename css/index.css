@@ -185,6 +185,11 @@ a:visited {
   align-items: center;
   z-index: 10;
 }
+@media (max-width: 768px) {
+  .header-wrapper header {
+    height: 80px;
+  }
+}
 .header-wrapper header .nav-wrapper {
   overflow: hidden;
   display: flex;
@@ -195,100 +200,207 @@ a:visited {
   text-decoration: none;
   height: 80px;
 }
-.header-wrapper header .nav-wrapper nav {
+.header-wrapper header .nav-wrapper .main-nav {
+  width: 50%;
+}
+.header-wrapper header .nav-wrapper ul#myLinks {
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 100%;
   color: #263A59;
 }
-@media (max-width: 500px) {
-  .header-wrapper header .nav-wrapper nav {
-    justify-content: space-around;
-    width: 100%;
-  }
-}
-.header-wrapper header .nav-wrapper nav a {
+.header-wrapper header .nav-wrapper ul#myLinks a {
   font-weight: 600;
   font-size: 1.8rem;
 }
-.header-wrapper header .nav-wrapper nav a:visited {
+.header-wrapper header .nav-wrapper ul#myLinks a:visited {
   color: #263A59;
 }
-.header-wrapper header .nav-wrapper nav a:hover {
+.header-wrapper header .nav-wrapper ul#myLinks a:hover {
   color: #E42127;
-}
-@media (max-width: 500px) {
-  .header-wrapper header .nav-wrapper {
-    flex-direction: column;
-  }
 }
 .header-wrapper header .nav-wrapper a {
   text-decoration: none;
   justify-content: space-around;
   font-size: 1.5rem;
 }
-footer {
+@media (max-width: 768px) {
+  .nav-wrapper {
+    display: flex;
+    width: 100%;
+  }
+  .header-wrapper header .nav-wrapper .main-nav {
+    width: 100%;
+  }
+  .main-nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: calc(120vh - 50px);
+    background: #575972;
+    top: 50px;
+    left: 0;
+    transition: 0.5%;
+    flex-direction: column;
+  }
+  .main-nav.toggleCls {
+    display: flex;
+    flex-direction: column;
+    height: 245px;
+    margin-top: 30px;
+    width: 100%;
+  }
+  #myLinks {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    padding: 5%;
+    color: white;
+    line-height: 3;
+    align-items: center;
+  }
+  .header-wrapper header .nav-wrapper ul#myLinks a:visited {
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .header-wrapper header .nav-wrapper ul#myLinks a:hover {
+    color: #E46428;
+  }
+  a:link {
+    color: white;
+  }
+  a:visted {
+    color: white;
+  }
+  a:active {
+    color: #E46428;
+  }
+}
+.header-wrapper header .nav-wrapper ul#myLinks {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.hamIcon {
+  float: right;
+  line-height: 50px;
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+}
+@media (min-width: 769px) {
+  .hamIcon {
+    display: none;
+  }
+  .main-nav {
+    display: initial;
+  }
+}
+.footer-content-wrapper {
   background-color: #263A59;
   border-top: 2px solid white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 400px;
+  height: 250px;
 }
 @media (max-width: 500px) {
-  footer {
+  .footer-content-wrapper {
     display: flex;
     flex-direction: column;
   }
 }
-footer .contact-text {
+.footer-content-wrapper #footer-left {
   color: white;
   width: 30%;
-  padding: 5%;
+  padding: 3% 5%;
 }
-footer .contact-text p {
-  font-size: 2rem;
+.footer-content-wrapper #footer-left p {
+  font-size: 1.6rem;
 }
 @media (max-width: 500px) {
-  footer .contact-text p {
-    font-size: 1.5rem;
+  .footer-content-wrapper #footer-left p {
+    font-size: 1.3rem;
   }
 }
-footer .contact-img {
+.footer-content-wrapper #footer-middle {
+  width: 20%;
+  padding: 1%;
+}
+.footer-content-wrapper #footer-right {
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+  text-align: center;
+}
+.footer-content-wrapper #footer-right a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  padding: 5%;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+.footer-content-wrapper #footer-right a:hover {
+  color: #E46428;
+}
+.footer-content-wrapper #footer-right .footer-link-mid {
   width: 30%;
 }
-footer .contact-img img {
-  margin: 10% 20% 0 0;
-}
-footer .contact-icons {
+.footer-content-wrapper #social-copyright .contact-icons {
   width: 30%;
   margin-top: 3%;
 }
-footer .contact-icons i {
+.footer-content-wrapper #social-copyright .contact-icons i {
   font-size: 3rem;
   color: white;
   margin: 15% 4%;
   padding: 1%;
 }
-.footer-link {
-  display: block;
+.footer-content-wrapper .footer-link-right {
+  width: 35%;
+}
+.footer-content-wrapper div.contact-img {
+  width: 60%;
+  margin-bottom: 20px;
+}
+.bottom {
+  background-color: #263A59;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
   width: 100%;
   text-align: center;
-  margin: 2% 0;
 }
-.footer-link a {
-  text-decoration: none;
-  color: #263A59;
+.bottom #social-copyright {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.bottom #social-copyright .contact-icons {
+  color: white;
   font-size: 2rem;
-  padding: 0 8.5%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
 }
-.footer-link a:visited {
-  color: #263A59;
+.bottom #social-copyright .contact-icons i {
+  padding: 5%;
+  text-align: center;
+  font-size: 3rem;
 }
-.footer-link a:hover {
-  color: #E42127;
+.bottom #social-copyright .copyright {
+  display: flex;
+  color: white;
 }
-.footer-link #copyright {
+.bottom #social-copyright .copyright h6 {
+  font-size: 1.5rem;
+}
+.bottom #social-copyright .copyright #copyright {
   color: #E42127;
   font-size: 2rem;
   width: 100%;
@@ -297,7 +409,7 @@ footer .contact-icons i {
 .hero {
   background-image: linear-gradient(to top, rgba(114, 115, 116, 0.475), #ffffff), url('../images/dirtroad2.jpg');
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: left center;
   background-attachment: fixed;
   padding: 5%;
   display: flex;
@@ -629,16 +741,34 @@ footer .contact-icons i {
   display: flex;
   overflow: hidden;
 }
+@media (max-width: 500px) {
+  .four-col {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .four-col .team-member {
   margin-top: 80px;
   float: left;
   width: 25%;
 }
-.four-col .feature {
+@media (max-width: 500px) {
+  .four-col .team-member {
+    width: 50%;
+    margin-top: 0px;
+  }
+  .four-col .team-member #st {
+    margin-top: 80px;
+  }
+  .four-col .team-member #ak {
+    margin-top: 80px;
+  }
+}
+.feature {
   display: block;
   width: 100%;
 }
-.four-col .feature-title-inner {
+.feature-title-inner {
   display: flex;
   flex-direction: column;
 }
@@ -689,10 +819,11 @@ footer .contact-icons i {
 .about-wrapper h1 {
   text-align: center;
   color: #E46428;
-  padding: 3% 20% 1% 20%;
+  padding: 3% 10% 1% 10%;
 }
 .about-wrapper p {
   padding: 0 20% 3% 20%;
+  text-align: center;
 }
 .driver-hero-wrapper {
   background-image: url('../images/african-driver.jpg');

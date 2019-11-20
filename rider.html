@@ -10,19 +10,28 @@
   <link rel="stylesheet" href="css/index.css">
 </head>
 
+ 
 <body>
-  <div class="header-wrapper">
-    <header>
-      <div class="nav-wrapper">
-        <a href="index.html"> <img src="images/RFLlogo-horz.png" ></a>
-          <nav>
-            <a href="driver.html">Drivers</a>
-            <a href="rider.html">Riders</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-          </nav>
-      </div>
-    </header>
+<div class="header-wrapper">
+          <header>
+            <div class="nav-wrapper">
+                
+               <a href="index.html"> <img src="images/RFLlogo-horz.png" ></a>
+             
+             <div class="hamIcon" onclick="toggleClass()">
+               <h2>&#9776;</h2>
+             </div>
+               <nav class="main-nav">
+                <ul id="myLinks">
+                  <li><a href="driver.html">Drivers</a></li>
+                  <li><a href="rider.html">Riders</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          </header>
   </div>
 
   <container class="rider-hero-wrapper">
@@ -82,31 +91,55 @@
   </container>
 
   <footer>
-    <div class="contact-text">
-      <p>PO Box 7040<br>
-        Kampala Uganda<br>
-        0800 200 300<br>
-        team@rideforlife.com
-      </p>
-    </div>
-    <div class="contact-img">
-      <img src="images/RFLlogo-REV.svg">
-    </div>
-    <div class="contact-icons">
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-youtube"></i>
-    </div>
-  </footer>
-
-  <container>
-      <div class="footer-link">
-        <a href="driver.html">Drivers</a>
-        <a href="rider.html">Riders</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+      <container class="footer-content-wrapper">
+      <container id="footer-left">
+          <div class="contact-img">
+              <img src="images/RFLlogo-REV.svg">
+            </div>
+      <div class="contact-text">
+        <p>PO Box 7040<br>
+          Kampala Uganda<br>
+          0800 200 300<br>
+          team@rideforlife.com
+        </p>
       </div>
+    </container>
+    
+  
+      <container id="footer-right">
+          <div class="footer-link-mid">
+              <a href="driver.html">Home</a>
+              <a href="driver.html">Drivers</a>
+              <a href="rider.html">Riders</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+        
+          <div class="footer-link-right">
+            <a href="driver.html">Rider Signup</a>
+            <a href="driver.html">Rider Login</a>
+            <a href="rider.html">Driver Signup</a>
+            <a href="about.html">Driver Login</a>
+          </div>
+       
+    </container>
   </container>
+  
+  <container class="bottom">
+  <container id="social-copyright">
+        <div class="contact-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <div class="copyright">
+        <h6>©2019 All Rights Reserved. Ride for Life.</h6></div>
+    </container>
+  </container>
+  
+    </footer>
+     
+    <script src="script.js"></script>
+  </body>
   </html>
-</body>
