@@ -303,18 +303,28 @@ a:visited {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 250px;
 }
 @media (max-width: 500px) {
   .footer-content-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 .footer-content-wrapper #footer-left {
   color: white;
   width: 30%;
   padding: 3% 5%;
+}
+@media (max-width: 500px) {
+  .footer-content-wrapper #footer-left {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-content-wrapper #footer-left img {
+    text-align: center;
+  }
 }
 .footer-content-wrapper #footer-left p {
   font-size: 1.6rem;
@@ -350,15 +360,13 @@ a:visited {
 .footer-content-wrapper #footer-right .footer-link-mid {
   width: 30%;
 }
-.footer-content-wrapper #social-copyright .contact-icons {
-  width: 30%;
-  margin-top: 3%;
-}
-.footer-content-wrapper #social-copyright .contact-icons i {
-  font-size: 3rem;
-  color: white;
-  margin: 15% 4%;
-  padding: 1%;
+@media (max-width: 500px) {
+  .footer-content-wrapper #footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
 }
 .footer-content-wrapper .footer-link-right {
   width: 35%;
@@ -405,6 +413,14 @@ a:visited {
   font-size: 2rem;
   width: 100%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }
 .hero {
   background-image: linear-gradient(to top, rgba(114, 115, 116, 0.475), #ffffff), url('../images/dirtroad2.jpg');
