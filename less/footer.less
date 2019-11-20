@@ -4,12 +4,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 250px;
   
 
     @media @phone {
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
     
     #footer-left{
@@ -18,6 +18,16 @@
     width: 30%;
     padding: 3% 5%;
 
+    @media @phone {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+
+      img{
+        text-align: center;
+
+      }
+    }
   
   
     p {
@@ -35,8 +45,6 @@
 
 }
  
-    
-
 #footer-right{
   padding: 5%;
   display: flex;
@@ -63,27 +71,32 @@ a:hover{
   width: 30%;
 }
 
+@media @phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
 }
 
-#social-copyright{
-  .contact-icons {
-    width: 30%;
-    margin-top: 3%;
-
-    i {
-      font-size: 3rem;
-      color: white;
-      margin: 15% 4%;
-      padding: 1%;
-    }
-  }
 }
+
+// #social-copyright{
+//   .contact-icons {
+//     width: 30%;
+//     margin-top: 3%;
+
+//     i {
+//       font-size: 3rem;
+//       color: white;
+//       margin: 15% 4%;
+//       padding: 1%;
+//     }
+//   }
+// }
 .footer-link-right{
   width: 35%;
 }
-// #footer-middle{
- 
-// }
+
 
 div.contact-img{
   width: 60%;
@@ -134,15 +147,17 @@ div.contact-img{
 
   #copyright {
       color: @red;
-      //display: flex;
-      //justify-content: center;
-      //align-items: middle;
       font-size: 2rem;
-      //border: 2px solid black;
       width: 100%;
       text-align: center;
       
     }
   }
+}
+@media @phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 }
