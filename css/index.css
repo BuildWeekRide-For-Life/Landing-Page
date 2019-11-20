@@ -357,8 +357,8 @@ a:visited {
 .footer-content-wrapper #social-copyright .contact-icons i {
   font-size: 3rem;
   color: white;
-  margin: 15% 5%;
-  padding: 2%;
+  margin: 15% 4%;
+  padding: 1%;
 }
 .footer-content-wrapper .footer-link-right {
   width: 35%;
@@ -400,8 +400,14 @@ a:visited {
 .bottom #social-copyright .copyright h6 {
   font-size: 1.5rem;
 }
+.bottom #social-copyright .copyright #copyright {
+  color: #E42127;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+}
 .hero {
-  background-image: linear-gradient(to top, rgba(114, 115, 116, 0.475), #ffffff), url("/images/dirtroad2.jpg");
+  background-image: linear-gradient(to top, rgba(114, 115, 116, 0.475), #ffffff), url('../images/dirtroad2.jpg');
   background-repeat: no-repeat;
   background-position: left center;
   background-attachment: fixed;
@@ -606,7 +612,7 @@ a:visited {
   text-align: center;
 }
 .rider-hero-wrapper {
-  background-image: url("/images/african-woman.jpg");
+  background-image: url('../images/african-woman.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -673,6 +679,63 @@ a:visited {
 .slate-button-rider:hover {
   background-color: #E46428;
   color: white;
+}
+.rider-heading-1 h1 {
+  color: #E46428;
+  margin: 2% 5%;
+}
+.rider-top-parent {
+  display: flex;
+  justify-content: space-around;
+  height: 275px;
+}
+.rider-top-parent .rider-top-text {
+  color: white;
+  border-radius: 15px;
+  max-width: 350px;
+  max-height: 350px;
+  background-color: #575972;
+}
+.rider-top-parent .rider-top-text p {
+  font-size: 1.8rem;
+  padding: 6%;
+}
+.rider-top-parent .rider-top-img img {
+  border-radius: 15px;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+.rider-bottom-section {
+  background-color: #E46428;
+}
+.rider-bottom-section .rider-heading-2 h1 {
+  color: white;
+  margin: 2% 5%;
+  padding-top: 3%;
+}
+.rider-bottom-parent {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.rider-bottom-parent .rider-bottom-text {
+  width: 40%;
+}
+.rider-bottom-parent .rider-bottom-text p {
+  color: white;
+  margin: 10% 7%;
+  font-size: 1.8rem;
+}
+.rider-bottom-parent .rider-bottom-img img {
+  border-radius: 15px;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
 }
 .four-col {
   display: flex;
@@ -763,7 +826,7 @@ a:visited {
   text-align: center;
 }
 .driver-hero-wrapper {
-  background-image: url("/images/african-driver.jpg");
+  background-image: url('../images/african-driver.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -829,4 +892,62 @@ button:hover {
 .slate-button:hover {
   background-color: #E42127;
   color: white;
+}
+.driver-heading-1 h1 {
+  color: #E42127;
+  margin: 2% 5%;
+}
+.driver-top-parent {
+  display: flex;
+  justify-content: space-around;
+  height: 350px;
+}
+.driver-top-parent .driver-top-text {
+  color: white;
+  border-radius: 15px;
+  max-width: 350px;
+  max-height: 350px;
+  background-color: #575972;
+}
+.driver-top-parent .driver-top-text p {
+  font-size: 1.8rem;
+  padding: 7%;
+}
+.driver-top-parent .driver-top-img img {
+  border-radius: 15px;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+.driver-bottom-section {
+  background-color: #E42127;
+}
+.driver-bottom-section .driver-heading-2 h1 {
+  color: white;
+  margin: 2% 5%;
+  padding-top: 3%;
+}
+.driver-bottom-parent {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.driver-bottom-parent .driver-bottom-text {
+  width: 40%;
+  margin-top: 5%;
+}
+.driver-bottom-parent .driver-bottom-text p {
+  color: white;
+  margin: 0 7%;
+  font-size: 1.6rem;
+}
+.driver-bottom-parent .driver-bottom-img img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 15px;
 }
