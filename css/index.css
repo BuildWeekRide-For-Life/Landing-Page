@@ -488,6 +488,7 @@ div.contact-img {
     flex-direction: column;
     width: 100%;
     height: auto;
+    object-fit: cover;
   }
 }
 .what-is-flex-parent .safe h2 {
