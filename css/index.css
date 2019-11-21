@@ -919,6 +919,7 @@ button:hover {
   color: white;
 }
 .slate-button {
+  float: left;
   height: 80px;
   width: 45%;
   font-size: 2rem;
@@ -1031,7 +1032,8 @@ button:hover {
     width: 100%;
     background-color: red;
     border-radius: 15px;
-    margin-top: 0;
+    margin: 15% 0;
+    padding: 6% 0;
   }
 }
 .driver-bottom-parent .driver-bottom-text p {
@@ -1108,6 +1110,7 @@ button:hover {
 @media (max-width: 500px) {
   .about-heading-1 {
     margin-top: 40%;
+    margin-bottom: 20%;
     text-align: center;
   }
 }
@@ -1130,6 +1133,7 @@ button:hover {
 @media (max-width: 500px) {
   .about-top-parent img {
     width: 100%;
+    margin-bottom: 10%;
   }
 }
 .about-top-parent .about-top-text {
@@ -1147,6 +1151,7 @@ button:hover {
     margin-top: 55%;
     background-color: #E46428;
     text-align: center;
+    margin-bottom: 10%;
   }
 }
 .about-heading-2 h1 {
