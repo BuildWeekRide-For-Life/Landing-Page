@@ -9,6 +9,13 @@
   height: 600px;
 }
 
+#what-wrapper{
+  @media @phone{
+    display: flex;
+    flex-direction: column-reverse
+  }
+}
+
 .what-is-content {
   text-align: center;
   margin: 0 3%;
@@ -93,11 +100,30 @@
   flex-direction: row;
   justify-content: space-around;
   
+  @media @phone{
+    img:nth-child(1){
+       display: none;
+     }
+     
+     img:nth-child(3){
+      display: none;
+    }
+
+    img:nth-child(2){
+      width: 80%;
+    }
+  }
+  
   img {
     width: 25%;
+    height: auto;
     border-radius: 10px;
+
+    
+
+    }
   }
-}
+
 
 .signup-wrapper {
   display: flex;
