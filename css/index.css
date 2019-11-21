@@ -988,6 +988,29 @@ div.contact-img {
   flex-direction: column;
   height: 800px;
 }
+@media (max-width: 500px) {
+  .driver-hero-wrapper .driver-hero-text {
+    margin-top: 15%;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+.driver-hero-wrapper .driver-mobile-background {
+  display: none;
+}
+@media (max-width: 500px) {
+  .driver-hero-wrapper {
+    background-image: none;
+  }
+}
+@media (max-width: 500px) {
+  .driver-hero-wrapper .driver-mobile-background {
+    display: flex;
+    width: 100%;
+    margin-top: 10%;
+  }
+}
 .hero-text-driver {
   direction: flex;
   width: 45%;
@@ -995,6 +1018,13 @@ div.contact-img {
   height: 600px;
   margin-top: 20px;
   padding: 3%;
+}
+@media (max-width: 500px) {
+  .hero-text-driver {
+    width: 100%;
+    margin-top: 20%;
+    text-align: center;
+  }
 }
 .hero-text-driver h1 {
   color: #E42127;
@@ -1025,6 +1055,7 @@ button:hover {
   color: white;
 }
 .slate-button {
+  float: left;
   height: 80px;
   width: 40%;
   font-size: 2rem;
@@ -1049,10 +1080,23 @@ button:hover {
   color: #E42127;
   margin: 2% 5%;
 }
+@media (max-width: 500px) {
+  .driver-heading-1 h1 {
+    margin-top: 40%;
+    text-align: center;
+    color: #263A59;
+  }
+}
 .driver-top-parent {
   display: flex;
   justify-content: space-around;
   height: 350px;
+}
+@media (max-width: 500px) {
+  .driver-top-parent {
+    flex-direction: column-reverse;
+    margin-top: 8%;
+  }
 }
 .driver-top-parent .driver-top-text {
   color: white;
@@ -1060,6 +1104,12 @@ button:hover {
   max-width: 350px;
   max-height: 350px;
   background-color: #575972;
+}
+@media (max-width: 500px) {
+  .driver-top-parent .driver-top-text {
+    max-width: 500px;
+    background-color: #E42127;
+  }
 }
 .driver-top-parent .driver-top-text p {
   font-size: 1.8rem;
@@ -1073,22 +1123,54 @@ button:hover {
   width: auto;
   height: auto;
 }
+@media (max-width: 500px) {
+  .driver-top-parent .driver-top-img img {
+    display: none;
+  }
+}
 .driver-bottom-section {
   background-color: #E42127;
+}
+@media (max-width: 500px) {
+  .driver-bottom-section {
+    background-color: white;
+  }
 }
 .driver-bottom-section .driver-heading-2 h1 {
   color: white;
   margin: 2% 5%;
   padding-top: 3%;
 }
+@media (max-width: 500px) {
+  .driver-bottom-section .driver-heading-2 h1 {
+    color: #263A59;
+    text-align: center;
+    padding: 0;
+    margin-top: -5%;
+  }
+}
 .driver-bottom-parent {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .driver-bottom-parent {
+    flex-direction: column-reverse;
+  }
+}
 .driver-bottom-parent .driver-bottom-text {
   width: 40%;
   margin-top: 5%;
+}
+@media (max-width: 500px) {
+  .driver-bottom-parent .driver-bottom-text {
+    width: 100%;
+    background-color: red;
+    border-radius: 15px;
+    margin: 15% 0;
+    padding: 6% 0;
+  }
 }
 .driver-bottom-parent .driver-bottom-text p {
   color: white;
@@ -1103,6 +1185,12 @@ button:hover {
   height: auto;
   border-radius: 15px;
 }
+@media (max-width: 500px) {
+  .driver-bottom-parent .driver-bottom-img img {
+    width: 100%;
+    margin-top: 8%;
+  }
+}
 .about-hero-wrapper {
   background-image: url("../images/city.jpg");
   -webkit-background-size: cover;
@@ -1113,6 +1201,28 @@ button:hover {
   display: flex;
   flex-direction: column;
   height: 800px;
+}
+@media (max-width: 500px) {
+  .about-hero-wrapper .about-hero-text {
+    margin-top: 15%;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+.about-hero-wrapper .about-mobile-background {
+  display: none;
+}
+@media (max-width: 500px) {
+  .about-hero-wrapper {
+    background-image: none;
+  }
+}
+@media (max-width: 500px) {
+  .about-hero-wrapper .about-mobile-background {
+    display: flex;
+    width: 100%;
+  }
 }
 .about-hero-text {
   direction: flex;
@@ -1133,14 +1243,34 @@ button:hover {
   color: #263A59;
   margin: 2% 5%;
 }
+@media (max-width: 500px) {
+  .about-heading-1 {
+    margin-top: 40%;
+    margin-bottom: 20%;
+    text-align: center;
+  }
+}
 .about-top-parent {
   background-color: #E46428;
   display: flex;
   justify-content: space-around;
   height: 350px;
 }
+@media (max-width: 500px) {
+  .about-top-parent {
+    background-color: white;
+    flex-direction: column-reverse;
+    margin-top: 15%;
+  }
+}
 .about-top-parent img {
   border-radius: 15px;
+}
+@media (max-width: 500px) {
+  .about-top-parent img {
+    width: 100%;
+    margin-bottom: 10%;
+  }
 }
 .about-top-parent .about-top-text {
   color: white;
@@ -1151,10 +1281,25 @@ button:hover {
   font-size: 2rem;
   padding: 5% 2% 0 2%;
 }
+@media (max-width: 500px) {
+  .about-top-parent .about-top-text {
+    max-width: 500px;
+    margin-top: 55%;
+    background-color: #E46428;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+}
 .about-heading-2 h1 {
   color: #263A59;
   margin: 2% 5%;
   padding-top: 3%;
+}
+@media (max-width: 500px) {
+  .about-heading-2 h1 {
+    margin-top: 65%;
+    text-align: center;
+  }
 }
 .about-bottom-parent {
   background-color: #E46428;
@@ -1162,6 +1307,12 @@ button:hover {
   justify-content: space-around;
   width: 100%;
   margin-bottom: 50px;
+}
+@media (max-width: 500px) {
+  .about-bottom-parent {
+    margin-top: 10%;
+    background-color: white;
+  }
 }
 .about-bottom-parent .about-bottom-text {
   color: #263A59;
@@ -1171,6 +1322,13 @@ button:hover {
   background-color: #263A59;
   font-size: 2rem;
   padding: 5% 2% 0 2%;
+}
+@media (max-width: 500px) {
+  .about-bottom-parent .about-bottom-text {
+    background-color: #E46428;
+    max-width: 500px;
+    padding: 6% 0;
+  }
 }
 .about-bottom-parent .about-bottom-text p {
   color: white;
@@ -1184,4 +1342,9 @@ button:hover {
   width: auto;
   height: auto;
   border-radius: 15px;
+}
+@media (max-width: 500px) {
+  .about-bottom-parent .about-bottom-img {
+    display: none;
+  }
 }
