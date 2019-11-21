@@ -11,8 +11,32 @@
     display: flex;
     flex-direction: column;
     height: 800px;
-    
+
+    @media @phone {
+      .driver-hero-text {
+          margin-top: 15%;
+          display: block;
+          width: 100%;
+          text-align: center;
+      }
+    }
+
+  .driver-mobile-background {
+    display: none;
+  }
+
+    @media @phone {
+      background-image: none;
+    }
 }
+
+  @media @phone {
+    .driver-hero-wrapper .driver-mobile-background {
+        display: flex;
+        width: 100%;
+        margin-top: 10%;
+    }
+  }
 
 .hero-text-driver {
       
@@ -23,9 +47,16 @@
     margin-top: 20px;
     padding: 3%;
 
+    @media @phone {
+      width: 100%;
+      margin-top: 20%;
+      text-align: center;
+    }
+
     h1{
         color: @red;
     }
+
     h2{
       font-weight: 400;
       color: @slate;
@@ -58,13 +89,25 @@ color: @white;
   h1 {
     color: @red;
     margin: 2% 5%;
+    
+    @media @phone {
+      margin-top: 40%;
+      text-align: center;
+      color: @dkblue;
+    }
   }
+
 }
 
 .driver-top-parent {
   display: flex;
   justify-content: space-around;
   height: 350px;
+
+  @media @phone {
+    flex-direction: column-reverse;
+    margin-top: 8%;
+  }
     
   .driver-top-text {
     color: white;
@@ -73,30 +116,42 @@ color: @white;
     max-height: 350px;
     background-color: @slate;
 
-    
+    @media @phone {
+      max-width: 500px;
+      background-color: @red;
+    }
+
     p {
       font-size: 1.8rem;
       padding: 7%;
     }
   }
 
-    .driver-top-img {
+  .driver-top-img {
       
-      img {
-        border-radius: 15px;
-        display: block;
-        max-width: 100%;
-        max-height: 100%;
-        //min-height: 60%; 
-        //min-width: 60%;
-        width: auto;
-        height: auto;
-      }
-   }
+    img {
+      border-radius: 15px;
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      //min-height: 60%; 
+      //min-width: 60%;
+      width: auto;
+      height: auto;
+    
+    @media @phone {
+      display: none;
+    }
+    }
+  }
 }
 
 .driver-bottom-section {
   background-color: @red;
+
+  @media @phone {
+    background-color: @white;
+  }
 
   .driver-heading-2 {
     
@@ -104,6 +159,13 @@ color: @white;
       color: white;
       margin: 2% 5%; 
       padding-top: 3%;
+    
+      @media @phone {
+        color: @dkblue;
+        text-align: center;
+        padding: 0;
+        margin-top: -5%;
+      }
     } 
   }
 }
@@ -112,10 +174,20 @@ color: @white;
   display: flex; 
   justify-content: space-around;
   width: 100%;
+    @media @phone {
+      flex-direction: column-reverse;
+    }
 
   .driver-bottom-text {
     width: 40%;
     margin-top: 5%;
+
+    @media @phone {
+      width: 100%;
+      background-color: red;
+      border-radius: 15px;
+      margin-top: 0;
+    }
         
     p {
       color: white;
@@ -134,6 +206,11 @@ color: @white;
       width: auto;
       height: auto;
       border-radius: 15px;
+      
+      @media @phone {
+        width: 100%;
+        margin-top: 8%;
+      }
     }
   }
 }
