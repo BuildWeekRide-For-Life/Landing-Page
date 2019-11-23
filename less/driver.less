@@ -47,6 +47,9 @@
     margin-top: 20px;
     padding: 3%;
 
+    @media @tablet {
+      width: 90%;
+    }
     @media @phone {
       width: 100%;
       margin-top: 20%;
@@ -117,14 +120,26 @@ color: @white;
     max-height: 350px;
     background-color: @slate;
 
+    @media @tablet {
+      height: 75%;
+      width: 40%;
+    }
     @media @phone {
       max-width: 500px;
       background-color: @red;
+      width: 100%;
     }
 
     p {
       font-size: 1.8rem;
       padding: 7%;
+    
+      @media @tablet {
+        font-size: 1.3rem;
+      }
+      @media @phone {
+        font-size: 1.8rem;
+      }
     }
   }
 
@@ -140,7 +155,12 @@ color: @white;
       width: auto;
       height: auto;
     
-    @media @phone {
+      @media @tablet {
+        max-width: 100%;
+        max-height: 75%;
+      }
+    
+      @media @phone {
       display: none;
     }
     }
@@ -150,6 +170,9 @@ color: @white;
 .driver-bottom-section {
   background-color: @red;
 
+  @media @tablet {
+    margin-top: -12%;
+  }
   @media @phone {
     background-color: @white;
   }
@@ -183,6 +206,9 @@ color: @white;
     width: 40%;
     margin-top: 5%;
 
+    @media @tablet {
+      margin-top: 0;
+    }
     @media @phone {
       width: 100%;
       background-color: red;
@@ -195,6 +221,13 @@ color: @white;
       color: white;
       margin: 0 7%;
       font-size: 1.6rem;
+    
+      @media @tablet {
+        font-size: 1.3rem;        
+      }
+      @media @phone {
+        font-size: 1.8rem;
+      }
     }
   }
 
@@ -208,6 +241,12 @@ color: @white;
       width: auto;
       height: auto;
       border-radius: 15px;
+      
+      @media @tablet {
+        max-width: 100%;
+        max-height: 100%;
+        float: right;
+      }
       
       @media @phone {
         width: 100%;
