@@ -1054,6 +1054,11 @@ div.contact-img {
   margin-top: 20px;
   padding: 3%;
 }
+@media (max-width: 768px) {
+  .hero-text-driver {
+    width: 90%;
+  }
+}
 @media (max-width: 500px) {
   .hero-text-driver {
     width: 100%;
@@ -1140,15 +1145,32 @@ button:hover {
   max-height: 350px;
   background-color: #575972;
 }
+@media (max-width: 768px) {
+  .driver-top-parent .driver-top-text {
+    height: 75%;
+    width: 40%;
+  }
+}
 @media (max-width: 500px) {
   .driver-top-parent .driver-top-text {
     max-width: 500px;
     background-color: #E42127;
+    width: 100%;
   }
 }
 .driver-top-parent .driver-top-text p {
   font-size: 1.8rem;
   padding: 7%;
+}
+@media (max-width: 768px) {
+  .driver-top-parent .driver-top-text p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 500px) {
+  .driver-top-parent .driver-top-text p {
+    font-size: 1.8rem;
+  }
 }
 .driver-top-parent .driver-top-img img {
   border-radius: 15px;
@@ -1158,6 +1180,12 @@ button:hover {
   width: auto;
   height: auto;
 }
+@media (max-width: 768px) {
+  .driver-top-parent .driver-top-img img {
+    max-width: 100%;
+    max-height: 75%;
+  }
+}
 @media (max-width: 500px) {
   .driver-top-parent .driver-top-img img {
     display: none;
@@ -1165,6 +1193,11 @@ button:hover {
 }
 .driver-bottom-section {
   background-color: #E42127;
+}
+@media (max-width: 768px) {
+  .driver-bottom-section {
+    margin-top: -12%;
+  }
 }
 @media (max-width: 500px) {
   .driver-bottom-section {
@@ -1198,6 +1231,11 @@ button:hover {
   width: 40%;
   margin-top: 5%;
 }
+@media (max-width: 768px) {
+  .driver-bottom-parent .driver-bottom-text {
+    margin-top: 0;
+  }
+}
 @media (max-width: 500px) {
   .driver-bottom-parent .driver-bottom-text {
     width: 100%;
@@ -1212,6 +1250,16 @@ button:hover {
   margin: 0 7%;
   font-size: 1.6rem;
 }
+@media (max-width: 768px) {
+  .driver-bottom-parent .driver-bottom-text p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 500px) {
+  .driver-bottom-parent .driver-bottom-text p {
+    font-size: 1.8rem;
+  }
+}
 .driver-bottom-parent .driver-bottom-img img {
   display: block;
   max-width: 100%;
@@ -1219,6 +1267,13 @@ button:hover {
   width: auto;
   height: auto;
   border-radius: 15px;
+}
+@media (max-width: 768px) {
+  .driver-bottom-parent .driver-bottom-img img {
+    max-width: 100%;
+    max-height: 100%;
+    float: right;
+  }
 }
 @media (max-width: 500px) {
   .driver-bottom-parent .driver-bottom-img img {
