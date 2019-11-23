@@ -1228,7 +1228,7 @@ button:hover {
   }
 }
 .driver-bottom-parent .driver-bottom-text {
-  width: 40%;
+  width: 50%;
   margin-top: 5%;
 }
 @media (max-width: 768px) {
