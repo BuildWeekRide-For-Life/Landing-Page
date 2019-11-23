@@ -147,7 +147,7 @@
     text-align: center;
     padding: 2% 0;
     border-right: 2px solid @white;
-
+    
     @media @phone {
       flex-direction: column;
       width: 100%;
@@ -157,11 +157,20 @@
 
     h2 {
       margin-bottom: 2%;
+      @media @tablet {
+        font-size: 2.3rem;
+      }
     }
 
     p {
       font-weight: 400;
       font-size: 1.8rem;
+      
+      @media @tablet {
+        font-size: 1.5rem;
+        padding: 0 2%;
+        margin-bottom: 4%;
+      }
     }
 
 
@@ -172,9 +181,13 @@
       vertical-align: middle;
       text-align: center;
       line-height: 5px;
-    
-     
+
+      @media @tablet {
+        width: 60%;
+        margin-top: 10%;
+      }
     }
+
     button:hover {
     
       background-color: @dkblue;
@@ -196,18 +209,25 @@
     height: 275px;
     text-align: center;
 
-    @media @phone {
+     @media @phone {
       flex-direction: column;
       width: 100%;
-  }
+    }
 
     h2 {
       margin-bottom: 2%;
+      @media @tablet {
+        font-size: 2.3rem;
+      }
     }
 
     p {
       font-weight: 400;
       font-size: 1.8rem;
+      @media @tablet {
+        font-size: 1.5rem;
+        margin-bottom: -5%;
+      }
     }
 
     button {
@@ -217,7 +237,11 @@
       vertical-align: middle;
       text-align: center;
       line-height: 5px;
-
+      
+      @media @tablet {
+        width: 60%;
+        margin-top: 15%;
+      }
     }
     button:hover {
     
