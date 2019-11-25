@@ -870,6 +870,7 @@ div.contact-img {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .rider-bottom-parent {
@@ -892,7 +893,7 @@ div.contact-img {
 }
 .rider-bottom-text p {
   color: white;
-  margin: 10% 7%;
+  margin: 3% 7%;
   font-size: 1.8rem;
 }
 @media (max-width: 500px) {
@@ -1048,7 +1049,7 @@ div.contact-img {
 }
 .hero-text-driver {
   direction: flex;
-  width: 45%;
+  width: 50%;
   background-color: white;
   height: 600px;
   margin-top: 20px;
@@ -1095,7 +1096,7 @@ button:hover {
   color: white;
 }
 .slate-button {
-  float: left;
+  float: right;
   height: 80px;
   width: 40%;
   font-size: 2rem;
