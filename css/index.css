@@ -840,6 +840,7 @@ div.contact-img {
     max-width: 500px;
     justify-content: center;
     border-radius: 0px;
+    text-align: center;
   }
 }
 .rider-top-parent .rider-top-img img {
@@ -893,7 +894,7 @@ div.contact-img {
 }
 .rider-bottom-text p {
   color: white;
-  margin: 3% 7%;
+  margin: 3% 0%;
   font-size: 1.8rem;
 }
 @media (max-width: 500px) {
