@@ -571,7 +571,7 @@ div.contact-img {
 }
 @media (max-width: 768px) {
   .signup-wrapper .driver h2 {
-    font-size: 2.3rem;
+    font-size: 4rem;
   }
 }
 .signup-wrapper .driver p {
@@ -582,7 +582,11 @@ div.contact-img {
   .signup-wrapper .driver p {
     font-size: 1.5rem;
     padding: 0 2%;
-    margin-bottom: 4%;
+  }
+}
+@media (max-width: 500px) {
+  .signup-wrapper .driver p {
+    font-size: 2rem;
   }
 }
 .signup-wrapper .driver button {
@@ -609,7 +613,7 @@ div.contact-img {
 @media (max-width: 768px) {
   .signup-wrapper .driver button {
     width: 60%;
-    margin-top: 10%;
+    margin-top: 5%;
   }
 }
 .signup-wrapper .driver button:hover {
@@ -639,7 +643,7 @@ div.contact-img {
 }
 @media (max-width: 768px) {
   .signup-wrapper .rider h2 {
-    font-size: 2.3rem;
+    font-size: 4rem;
   }
 }
 .signup-wrapper .rider p {
@@ -650,6 +654,11 @@ div.contact-img {
   .signup-wrapper .rider p {
     font-size: 1.5rem;
     margin-bottom: -5%;
+  }
+}
+@media (max-width: 500px) {
+  .signup-wrapper .rider p {
+    font-size: 2rem;
   }
 }
 .signup-wrapper .rider button {
@@ -676,7 +685,7 @@ div.contact-img {
 @media (max-width: 768px) {
   .signup-wrapper .rider button {
     width: 60%;
-    margin-top: 15%;
+    margin-top: 8%;
   }
 }
 .signup-wrapper .rider button:hover {
